@@ -25,7 +25,7 @@ namespace ImageConverter
                           {
                               DefaultExt = ".jpeg",
                               Filter =
-                                  "JPEG Files (*.jpeg)|*.jpeg|JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif|TiFF Files (*.tiff)|*.tiff"
+                                  "JPEG Files (*.jpeg)|*.jpeg|JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif|TiFF Files (*.tiff)|*.tiff|TiF Files (*.tif)|*.tif|All Files (*.*)|*.*"
                           };
 
 
@@ -156,6 +156,7 @@ namespace ImageConverter
                 var newFilePath = String.Format("{0}\\{1}_converted.jpg",
                             Path.GetDirectoryName(imagePath),
                             Path.GetFileNameWithoutExtension(imagePath));
+
                 ResizeImage(imageDimensions.Item1, imageDimensions.Item2, imagePath, newFilePath);
 
                 stopwatch.Stop();
