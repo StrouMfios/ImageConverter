@@ -1,0 +1,18 @@
+﻿<Window x:Class="ImageConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Happy Resizer" Height="350" Width="525" ResizeMode="NoResize" Icon="icon.ico">
+    <Grid>
+        <TextBox x:Name="textImage" HorizontalAlignment="Left" Height="23" Margin="10,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="417"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="432,44,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="Resize any image in the given dimensions and convert it to .jpg" HorizontalAlignment="Center" Margin="10,12,0,0" VerticalAlignment="Top"/>
+        <Label Content="Width" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="width" HorizontalAlignment="Left" Height="23" Margin="68,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Text="450"/>
+        <Label Content="Height" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="height" HorizontalAlignment="Left" Height="23" Margin="68,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Text="450"/>
+        <Label Content="dpi" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="dpi" HorizontalAlignment="Left" Height="23" Margin="68,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Text="72"/>
+        <Button Content="Convert" HorizontalAlignment="Left" Margin="432,171,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
